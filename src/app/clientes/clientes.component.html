@@ -1,0 +1,30 @@
+<div aling="center">
+    <div class="center">
+
+        <table class="table ">
+            <thead class="">
+                <tr class="table-primary">
+                    <th>Nombre</th>
+                    <th>APaterno</th>
+                    <th>AMaterno</th>
+                    <th>Telefono</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+            
+            <div *ngFor="let cli of clientes">
+                <h3>
+                    <a [title]="'compras de clientes' + cli.nombre" [routerLink]="['/clientes']">
+
+                        {{cli.nombre}}
+                        {{cli.aPaterno}}
+                        {{cli.aMaterno}}
+                        {{cli.telefono}}
+                        {{cli.Correo}}
+                    </a>
+                </h3>
+
+            </div>
+        </table>
+    </div>
+</div>
